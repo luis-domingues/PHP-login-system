@@ -1,6 +1,7 @@
 # Sistema de Cadastro e Login em PHP
 
-![Preview](link_para_imagem)
+![Preview]![Diagrama em branco](https://github.com/luis-domingues/PHP-login-system/assets/157630664/08c9ecce-131f-4863-a779-82354cc4b1e3)
+()
 
 ## Descrição
 
