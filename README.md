@@ -1,49 +1,64 @@
-# Sistema de Cadastro e Login em PHP
+# PHP Registration and Login System
 
-![Preview](![mobile](https://github.com/luis-domingues/PHP-login-system/assets/157630664/49e95d61-62bf-40cf-9e47-b2d56c08a84f))
+> Status: Development ⚠️
 
-## Descrição
+![Tela inicial](https://github.com/luis-domingues/PHP-login-system/assets/157630664/804327a0-4217-462c-9bc0-c983e7e60937)
 
-Este é um simples sistema de cadastro e login construído com PHP, SQL (com POO), CSS, JavaScript e Bootstrap Icons. O projeto serve como um ponto de partida para o desenvolvimento de um dashboard pessoal totalmente em PHP.
+## Description
 
-## Tecnologias Utilizadas
+This is a simple registration and login system built with PHP, SQL (with OOP), CSS, JavaScript, and Bootstrap Icons. The project serves as a starting point for developing a fully PHP-based personal dashboard.
 
-- **PHP:** Linguagem de programação para a lógica do servidor e interação com o banco de dados.
-- **MySQL:** Sistema de gerenciamento de banco de dados relacional para armazenamento e manipulação de dados.
-- **Bootstrap:** Framework front-end para desenvolvimento de interfaces web responsivas e estilizadas.
-- **JavaScript:** Linguagem de programação para adicionar interatividade e funcionalidades dinâmicas ao site.
-- **KUTE.js:** Biblioteca JavaScript para animações e transições suaves.
+## Technologies Used
 
-## Recomendações Gerais
+- **PHP:** Programming language for server logic and interaction with the database.
+- **MySQL:** Relational database management system for storing and manipulating data.
+- **Bootstrap:** Front-end framework for developing responsive and styled web interfaces.
+- **JavaScript:** Programming language for adding interactivity and dynamic functionalities to the website.
+- **KUTE.js:** JavaScript library for smooth animations and transitions.
 
-- **Requerimentos:**
-  - PHP 7.0 ou superior
-  - MySQL 5.6 ou superior
-  - Bootstrap 1.11.3 ou superior
-  - Biblioteca KUTE.js 2.2.4 ou superior
+## General Recommendations
 
-- **Instalação em Windows:** Recomenda-se utilizar o WAMPSERVER versão 3.3.2. [Download](link_para_download)
-- **Instalação em Linux:** [Tutorial](link_para_tutorial)
-- **Instalação em MacOS:** [Tutorial](link_para_tutorial)
+- **Requirements:**
+<table>
+  <tr>
+    <td>PHP</td>
+    <td>MySQL</td>
+    <td>Bootstrap</td>
+    <td>KUTE.js Library</td>
+  </tr>
+  <tr>
+    <td>7.0 or higher</td>
+    <td>5.6 or higher</td>
+    <td>1.11.3 or higher</td>
+    <td>2.2.4 or higher</td>
+  </tr>
+</table>
 
-- **Configuração do Banco de Dados:**
-  - Utilize o modelo de tabela fornecido na seção de "Recomendações Gerais".
+- **Installation on Windows:** It is recommended to use `WAMPSERVER` version 3.3.2. [Download]([link_to_download](https://www.wampserver.com/))
+- **Installation on Linux:** [Tutorial](https://vitux.com/ubuntu-xampp/)
+- **Installation on MacOS:** [Tutorial](https://medium.com/analytics-vidhya/download-and-install-xampp-on-mac-oshow-to-download-and-install-xampp-on-mac-os-97705974080d)
 
-## Registros Utilizados na Tabela
+- **Database Configuration:**
+  - ![image](https://github.com/luis-domingues/PHP-login-system/assets/157630664/1600ac8e-0a63-4941-9e83-055d7ade9988)
 
-![Registros](link_para_imagem)
+## Records Used in the Table
 
-- **Campo 1:** Descrição do campo 1.
-- **Campo 2:** Descrição do campo 2.
-- ...
+## How to Use
 
-## Como Usar
+1. Clone or download the repository.
+2. Use the table template provided in the "General Recommendations" section for the database.
+3. Configure the `conection.php` file with the database information.
+4. Run the project on a local server.
 
-1. Clone ou faça o download do repositório.
-2. Utilize o modelo de tabela na base de dados fornecido na seção de "Recomendações Gerais".
-3. Configure o arquivo `conection.php` com as informações do banco de dados.
-4. Execute o projeto em um servidor local.
+## Methodology
 
-## Licença
+![Diagrama em branco (2)](https://github.com/luis-domingues/PHP-login-system/assets/157630664/2016d3af-9ac7-4a8b-85a8-8af72acca238)
 
-Este projeto está licenciado sob a [Licença MIT](link_para_licença).
+1. **Create Directory:** Start by creating a directory named "sistema_login" within the "www" directory of your WAMP SERVER.
+2. **Create Files:** Create two files named index.php and conection.php within the "sistema_login" directory.
+3. **Index.php:** This file serves as the welcome screen. It provides options for users to either login or register.
+4. **Login:** When the login button is clicked, users are redirected to the login screen (login.php) where they need to enter their credentials.
+5. **Registration:** When the register button is clicked, users are redirected to the registration screen (cadastro.php) where they need to enter their details.
+6. **Back Button:** Both the login and registration screens have a back button (symbolized by an arrow) at the top right to return to the welcome screen (index.php).
+7. **Database Connection:** conection.php is responsible for establishing a connection between the application and the database.
+
