@@ -31,25 +31,28 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 </head>
 
 <body>
-    <div class="arrow">
-        <a href="index.php"><i class="bi bi-arrow-left"></i></a>
+    <div class="main">
+        <div class="arrow">
+            <a href="index.php"><i class="bi bi-arrow-left"></i></a>
+        </div>
+        <div class="container">
+            <h1>Oi!</h1>
+            <p class="p-1 subtitle">crie sua nova conta</p>
+            <form action="cadastro.php" method="POST">
+                <label for="nome" class="s-1">Primeiro nome:</label>
+                <input type="text" name="nome" id="nome" class="s-3">
+                <br>
+                <label for="email" class="s-1">E-mail:</label>
+                <input type="email" name="email" id="email" class="s-3">
+                <br>
+                <label for="senha" class="s-1">Senha:</label>
+                <input type="password" name="senha" id="senha" class="s-3">
+                <br>
+                <input type="submit" value="Cadastrar" class="s-2 btn-1">
+            </form>
+        </div>
     </div>
-    <div class="container">
-        <h1>Oi!</h1>
-        <p class="p-1 subtitle">crie sua nova conta</p>
-        <form action="cadastro.php" method="POST">
-            <label for="nome" class="s-1">Nome:</label>
-            <input type="text" name="nome" id="nome" class="s-3">
-            <br>
-            <label for="email" class="s-1">E-mail:</label>
-            <input type="email" name="email" id="email" class="s-3">
-            <br>
-            <label for="senha" class="s-1">Senha:</label>
-            <input type="password" name="senha" id="senha" class="s-3">
-            <br>
-            <input type="submit" value="Cadastrar" class="s-2 btn-1">
-        </form>
-    </div>
+
 
 </body>
 

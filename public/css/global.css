@@ -5,15 +5,21 @@
     --white: rgb(255, 255, 255);
     --blue: rgb(50, 0, 228);
     --black: rgb(0, 0, 0);
-    --red: rgb(255, 40, 40);
+    --red: rgb(255, 55, 55);
+    --purple: rgb(100, 100, 255);
+    --purple-glass: rgba(100, 100, 255, 0.540);
 }
 
-body {
+html {
+    font-family: "Lato", sans-serif;
+}
+
+.main {
+    background: var(--background);
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
-    font-family: "Lato", sans-serif;
 }
 
 .logo, .arrow {
@@ -30,17 +36,6 @@ body {
 }
 
 .container {
-    margin: 0 auto;
-    text-align: center;
-    padding: 2rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    max-width: 800px;
-}
-
-.main {
     margin: 0 auto;
     text-align: center;
     padding: 2rem;
@@ -97,11 +92,198 @@ input {
 .btn-3 {
     background: var(--red);
     color: var(--white);
-    padding: .625rem;
-    border-radius: 1.5rem;
+    padding: .5rem;
+    border-radius: .5rem;
     border: none;
     font-size: 1rem;
     font-weight: 600;
+    text-align: center;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 5rem;
+    height: 100%;
+    background: var(--white);
+    border-right: 1px solid var(--purple);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 2rem;
+}
+
+.sidebar-item {
+    padding: .9rem;
+    text-align: center;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    margin-top: .25rem;
+}
+
+.sidebar-item a i {
+    display: flex;
+    justify-content: center;
+    color: var(--purple);
+}
+
+.sidebar-item.active {
+    background: var(--purple);
+    border-radius: 20%;
+}
+
+.sidebar-item:hover:not(.active) {
+    background: var(--purple-glass);
+    border-radius: 20%;
+    margin-top: .25rem;
+}
+
+.sidebar-item.active i {
+    color: var(--white);
+}
+
+.logout-btn {
+    margin-top: auto;
+    padding-bottom: 2rem;
+}
+
+.dashboard-main {
+    background-color: var(--background);
+    padding-left: 6rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    height: 100vh;
+}
+
+.contents {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2.5rem;
+    align-items: center;
+    width: 80%;
+    max-width: 1200px;
+    margin-top: 2rem;
+}
+
+.weather-container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background: rgba(255, 255, 255 .5);
+    box-shadow: rgba(0, 0, 0, .24) 0px 3px 8px;
+    padding: 1.25rem;
+    border-radius: 1rem;
+}
+
+.weather-container,
+.greeting-container {
+    margin: 1rem;
+}
+
+.form .input {
+    padding: .25rem;
+    min-height: 1rem;
+    margin-left: .8rem;
+    background-color: var(--white);
+    border: none;
+    border-radius: .25rem;
+    cursor: pointer;
+}
+
+.form-input-container {
+    display: flex;
+}
+
+#search {
+    border: none;
+    border-radius: 50%;
+    padding: .625rem;
+    color: var(--white);
+    background: var(--purple);
+    cursor: pointer;
+}
+
+#weather-data {
+    border-top: 1px solid var(--purple);
+    margin-top: 1rem;
+    padding-top: 1rem;
+    text-align: center;
+}
+
+#weather-data h2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: .6rem;
+}
+
+#weather-data h2 i {
+    font-size: 1rem;
+}
+
+#weather-data span {
+    margin: .5rem;
+}
+
+#country {
+    height: 1.5rem;
+}
+
+#description-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: .6rem 0;
+}
+
+#description {
+    font-weight: bold;
+    text-transform: capitalize;
+}
+
+#details-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#details-container #humidity {
+    border-right: 1px solid var(--purple);
+    margin: .6rem;
+    padding: .6rem;
+}
+
+.text-effect {
+    font-size: .9rem;
+    font-weight: 600;
+}
+
+.text-effect span {
+    position: relative;
+}
+
+.text-effect span::before {
+    content: "";
+    color: var(--purple);
+    animation: words 18s infinite;
+}
+
+.text-effect span::after {
+    content: "";
+    position: absolute;
+    height: 100%;
+    border-left: 2px solid var(--purple);
+    right: -1rem;
+    animation: cursor .8s infinite, typing 18s steps(15) infinite;
+    width: calc(100% + 1rem);
+    background: var(--background);
 }
 
 /*padronização*/
@@ -127,4 +309,41 @@ input {
 }
 .subtitle {
     color: rgb(110, 110, 215);
+}
+.hide {
+    display: none;
+}
+
+/*keyframes*/
+@keyframes words {
+    0%,20%{
+        content: "É bom ter você aqui (:"
+    }
+    21%,40%{
+        content: "Como você está?";
+    }
+    41%,60%{
+        content: "Digite sua localização ->";
+    }
+    61%,80%{
+        content: "Hello world";
+    }
+    81%, 100%{
+        content: "PHP, CSS, JavaScript";
+    }
+}
+
+@keyframes typing {
+    10%,15%,30%,35%,50%,55%,70%,75%,90%,95%{
+        width: 0;
+    }
+    5%,20%,25%,40%,45%,60%,65%,80%,85%{
+        width: calc(100% + 1rem);
+    }
+}
+
+@keyframes cursor {
+    0%{
+        border-left: 2px solid var(--background);
+    }
 }
