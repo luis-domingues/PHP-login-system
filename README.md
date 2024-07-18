@@ -1,4 +1,4 @@
-# PHP Registration and Login System *UPEDATE*
+# PHP Registration and Login System *UPDATE*
 
 > Status: Development ⚠️
 
