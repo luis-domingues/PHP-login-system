@@ -1,0 +1,20 @@
+{
+  "name": "sistema_login.v1",
+  "version": "1.0.0",
+  "description": "devboard is a web dashboard designed to organize and optimize developers' time and projects. In it, you can organize your insights, ideas, analyze development time, monitor your financial statement, among other features.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.20.2",
+    "express": "^4.19.2",
+    "mongoose": "^8.5.1"
+  },
+  "devDependencies": {
+    "tailwindcss": "^3.4.6"
+  }
+}
