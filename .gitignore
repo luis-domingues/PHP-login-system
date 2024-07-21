@@ -1,0 +1,51 @@
+# Node modules
+node_modules/
+
+# TailwindCSS build files
+public/assets/css/dist/
+
+# PHPStorm
+.idea/
+
+# Composer vendor directory
+vendor/
+
+# Environment variables
+.env
+
+# Log files
+*.log
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# WAMP server generated files
+wamp64/
+
+# System files
+.sass-cache/
+*.cache
+*.tmp
+
+# IDE specific files
+.vscode/
+*.sublime-workspace
+*.sublime-project
+
+# MacOS files
+._*
+.AppleDouble
+.LSOverride
+Icon?
+._*
+.DS_Store
+.Spotlight-V100
+.Trashes
+*~.nib
+*.swp
+
+# Windows files
+Thumbs.db
+ehthumbs.db
+Desktop.ini
